@@ -7,4 +7,5 @@
 5. if user 1 clicks send money, their balance decreases and the user 2 increases.
 6. If insufficient fund exists, send an error.
 7. see all transcation made along with time of transcation.
-8. unit testing.
+8. unit testing.\
+9. pip freeze -r requirement.txt

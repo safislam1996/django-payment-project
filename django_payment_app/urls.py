@@ -19,5 +19,6 @@ from payment import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name='home')
+    path('',views.home,name='home'),
+    path('success/',views.success_page,name='success_page')
 ]

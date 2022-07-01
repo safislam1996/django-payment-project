@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Success Page
+{% endblock %}
+{% block content %}
+<h1>Succesfull entry</h1>
+<!-- users=Customer.objects.all() -->
+
+    <table>
+        <!-- <th>Name</th>
+        <th>Phone Number</th>
+        <tr>{{ user.name }}</tr>
+        <tr>{{ user.phone_number }}</tr> -->
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.phone_number }}</td>
+                    <td>{{ user.balance }}</td>
+                    <td>{{ user.created_at }}</td>
+                </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+    <!-- <h1>{{ user.name }}</h1>
+    <h2>{{ user.phone_number }}</h2> -->
+
+</form>
+{% endblock %}

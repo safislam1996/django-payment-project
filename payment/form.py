@@ -1,6 +1,6 @@
 from dataclasses import fields
 from django import forms
-from django.dispatch import receiver
+# from django.dispatch import receiver
 from .models import Customer
 
 
